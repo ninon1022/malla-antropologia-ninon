@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Antropología</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎓 Malla Antropología</h1>
+  <div class="malla">
+
+    <!-- 1er Semestre -->
+    <div class="semestre">
+      <h2>1º</h2>
+      <div class="ramo" id="teoria1">Teoría Antropológica I</div>
+      <div class="ramo" id="lab1">Lab. de Etnografía I</div>
+      <div class="ramo">Cultura e Identidad</div>
+      <div class="ramo">Filosofía</div>
+    </div>
+
+    <!-- 2do Semestre -->
+    <div class="semestre">
+      <h2>2º</h2>
+      <div class="ramo bloqueado" id="teoria2" data-depende-de="teoria1">Teoría Antropológica II</div>
+      <div class="ramo bloqueado" id="lab2" data-depende-de="lab1">Lab. de Etnografía II</div>
+      <div class="ramo">Sociología</div>
+      <div class="ramo">Epistemología</div>
+    </div>
+
+    <!-- 3er Semestre -->
+    <div class="semestre">
+      <h2>3º</h2>
+      <div class="ramo bloqueado" id="teoria3" data-depende-de="teoria2">Teoría Antropológica III</div>
+      <div class="ramo bloqueado" id="lab3" data-depende-de="lab2">Lab. de Etnografía III</div>
+      <div class="ramo" id="cuali1">Métodos Cualitativos I</div>
+      <div class="ramo">Estadística Aplicada</div>
+    </div>
+
+    <!-- 4to Semestre -->
+    <div class="semestre">
+      <h2>4º</h2>
+      <div class="ramo bloqueado" id="teoria4" data-depende-de="teoria3">Teoría Antropológica IV</div>
+      <div class="ramo bloqueado" id="lab4" data-depende-de="lab3">Lab. de Etnografía IV</div>
+      <div class="ramo bloqueado" id="cuali2" data-depende-de="cuali1">Métodos Cualitativos II</div>
+      <div class="ramo" id="cuanti1">Métodos Cuantitativos I</div>
+    </div>
+
+    <!-- 5to Semestre -->
+    <div class="semestre">
+      <h2>5º</h2>
+      <div class="ramo bloqueado" id="teoria5" data-depende-de="teoria4">Teoría Antropológica V</div>
+      <div class="ramo bloqueado" id="lab5" data-depende-de="lab4">Lab. de Etnografía V</div>
+      <div class="ramo bloqueado" id="cuali3" data-depende-de="cuali2">Métodos Cualitativos III</div>
+      <div class="ramo bloqueado" id="cuanti2" data-depende-de="cuanti1">Métodos Cuantitativos II</div>
+    </div>
+
+    <!-- 6to Semestre -->
+    <div class="semestre">
+      <h2>6º</h2>
+      <div class="ramo bloqueado" id="lab6" data-depende-de="lab5">Lab. de Etnografía VI</div>
+      <div class="ramo bloqueado" id="cuali4" data-depende-de="cuali3">Métodos Cualitativos IV</div>
+      <div class="ramo bloqueado" id="prof1">Profundización I</div>
+      <div class="ramo">Antropología Temática I</div>
+    </div>
+
+    <!-- 7mo Semestre -->
+    <div class="semestre">
+      <h2>7º</h2>
+      <div class="ramo bloqueado" id="prof2" data-depende-de="prof1">Profundización II</div>
+      <div class="ramo bloqueado" id="lab7" data-depende-de="lab6">Lab. de Etnografía VII</div>
+      <div class="ramo">Antropología Temática II</div>
+      <div class="ramo">Antropología Aplicada</div>
+    </div>
+
+    <!-- 8vo Semestre -->
+    <div class="semestre">
+      <h2>8º</h2>
+      <div class="ramo">Práctica Profesional</div>
+      <div class="ramo">Seminario de Grado</div>
+      <div class="ramo">Políticas del Territorio</div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
