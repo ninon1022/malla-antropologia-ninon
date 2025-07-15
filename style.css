@@ -1,0 +1,6 @@
+.ramo.bloqueado {
+  background-color: #fce4ec;
+  color: #bbb;
+  cursor: not-allowed;
+  border-style: dashed;
+}
